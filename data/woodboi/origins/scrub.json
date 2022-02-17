@@ -1,0 +1,20 @@
+{
+	"loading_priority":1,
+	"powers": [
+		"woodboi:bubble",
+		"woodboi:flower_launch",
+		"woodboi:composter",
+		"woodboi:lightweight",
+		"woodboi:smaller",
+		"woodboi:water_walk",
+		"woodboi:pyrophobia",
+		"woodboi:dirt_diet",
+		"woodboi:nonshield",
+		"woodboi:wood"
+	],
+	"icon": "minecraft:oak_wood",
+	"order": 10,
+	"impact": 2,
+	"name": "Deku Scrub",
+	"description": "You are a small wooden imp from the Deku Forest, entering another world hasn't really been the best for you..."
+}
