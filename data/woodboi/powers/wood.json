@@ -1,0 +1,50 @@
+{
+	"name": "Wood Body",
+	"description": "Because of your wood-like disposition, you take extra damage from slashing weapong. On the plus side, you are resistent to bludgeoning, piercing, and magic damage.",
+	"type": "origins:multiple",
+	"slashing": {
+		"type": "origins:modify_damage_taken",
+		"bientity_condition": {
+			"type": "origins:target_condition",
+			"condition": {
+				"type": "origins:equipped_item",
+				"equipment_slot": "mainhand",
+				"item_condition": {
+					"type": "origins:ingredient",
+					"ingredient": {
+						"tag": "woodboi:slashing"
+					}
+				}
+			}
+		},
+		"modifier": {
+			"operation": "multiply_base",
+			"value": 0.4
+		}
+	},
+	"other":{
+		"type": "origins:modify_damage_taken",
+		"bientity_condition": {
+			"type": "origins:target_condition",
+			"condition": {
+				"type": "origins:equipped_item",
+				"equipment_slot": "mainhand",
+				"item_condition": {
+					"type": "origins:ingredient",
+					"ingredient": {
+						"tag": "woodboi:slashing"
+					}
+				}
+			},
+			"inverted":true
+		},
+		"damage_condition":{
+			"type": "origins:fire",
+			"inverted":true
+		},
+		"modifier": {
+			"operation": "multiply_base",
+			"value": -0.4
+		}
+	}
+}
